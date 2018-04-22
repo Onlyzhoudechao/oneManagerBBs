@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mapper.board.BoardMapper" >
+  <resultMap id="BaseResultMap" type="com.model.board.Board" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="boardId" property="boardid" jdbcType="INTEGER" />
+    <result column="boardType" property="boardtype" jdbcType="VARCHAR" />
+    <result column="parentId" property="parentid" jdbcType="INTEGER" />
+    <result column="parentName" property="parentname" jdbcType="VARCHAR" />
+    <result column="Depth" property="depth" jdbcType="INTEGER" />
+    <result column="rootId" property="rootid" jdbcType="INTEGER" />
+    <result column="child" property="child" jdbcType="INTEGER" />
+    <result column="orders" property="orders" jdbcType="INTEGER" />
+    <result column="readMe" property="readme" jdbcType="VARCHAR" />
+    <result column="boardMaster" property="boardmaster" jdbcType="VARCHAR" />
+    <result column="postNum" property="postnum" jdbcType="INTEGER" />
+    <result column="topicNum" property="topicnum" jdbcType="INTEGER" />
+    <result column="indexIMG" property="indeximg" jdbcType="VARCHAR" />
+    <result column="todayNum" property="todaynum" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="lastPost" property="lastpost" jdbcType="VARCHAR" />
+    <result column="sid" property="sid" jdbcType="INTEGER" />
+    <result column="boardUser" property="boarduser" jdbcType="VARCHAR" />
+    <result column="boardTopStr" property="boardtopstr" jdbcType="VARCHAR" />
+    <result column="zf" property="zf" jdbcType="VARCHAR" />
+    <result column="zt" property="zt" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
